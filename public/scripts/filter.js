@@ -10,7 +10,7 @@ const hour = date.getHours()
 const minute = date.getMinutes()
 
 const serverData = async () => {
-    const data = await axios.get("http://localhost:5000/home/login/session")
+    const data = await axios.get("https://flight-booking-app.onrender.com/home/login/session")
     let res = data.data
     document.getElementById("user-info").innerHTML = res.firstname
 }
@@ -71,7 +71,7 @@ const search = async () => {
         boardingPoint = boardingPoint.value
         destinationPoint = destinationPoint.value
         const inputDate = { timing: dateDOM.value + " " + timeDOM.value, boardingPoint, destinationPoint }
-        const res = await axios.post("http://localhost:5000/home/login/searchflights", inputDate)
+        const res = await axios.post("https://flight-booking-app.onrender.com/home/login/searchflights", inputDate)
         const { success } = res.data
         if (success) {
             appendData(res.data.flightData)
@@ -84,7 +84,7 @@ const search = async () => {
 }
 
 const book = async (flightnumber) => {
-    const serverData = await axios.post(`http://localhost:5000/home/login/searchflights/${flightnumber}`)
+    const serverData = await axios.post(`https://flight-booking-app.onrender.com/home/login/searchflights/${flightnumber}`)
     let { success } = serverData.data
     if (success) {
         alert("Ticket Booked")

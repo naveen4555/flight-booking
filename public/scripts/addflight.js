@@ -7,7 +7,7 @@ const minute = dateObj.getMinutes()
 
 const getSessionData = async () => {
     console.log("Hello")
-    const res = await axios.get("http://localhost:5000/home/adminlogin/session")
+    const res = await axios.get("https://flight-booking-app.onrender.com/home/adminlogin/session")
     document.getElementById("user-info").innerHTML = res.data.firstname
 }
 getSessionData()
@@ -153,7 +153,7 @@ date.addEventListener("focusout", validateDate)
 const add = async () => {
     if (validateFlightNumber() && validateFrom() && validateTo() && validateTime() && validateDate()) {
         const inputData = { flightnumber: flightnumber.value, from: from.value, to: to.value, timing: date.value + " " + time.value }
-        await axios.post("http://localhost:5000/home/adminlogin/addflight", inputData).then((res) => {
+        await axios.post("https://flight-booking-app.onrender.com/home/adminlogin/addflight", inputData).then((res) => {
             const { success } = res.data
             showStatus(success)
         })
