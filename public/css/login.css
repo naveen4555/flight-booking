@@ -1,0 +1,116 @@
+body {
+    background-image: url("../img/loginbag.jpg");
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+
+}
+
+.form {
+    min-height: 65vh;
+    height: auto;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgb(184, 184, 184) 23%, rgb(255, 255, 255) 81%, rgba(242, 255, 225, 1) 100%);
+    border-radius: 50px 50px 50px 50px;
+    padding: 60px 50px;
+    box-shadow: 5px 5px 10px #00000030, -5px -5px 10px #00000030;
+}
+
+.form h5 {
+    text-align: center;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.form .form-control {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: 0.5px solid #0000006e;
+    border-radius: 18px;
+}
+.show-password{
+    color: #000000;
+    font-size: 14px;
+}
+.show-password a{
+    text-decoration: none;
+    color: #030303;
+}
+.show-password span{
+    float: right;
+}
+.input label,
+.password label {
+    color: #080808;
+    font-weight: 600;
+}
+
+.input,
+.password {
+    margin-bottom: 12px;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.button .button {
+    width: 100%;
+    border-radius: 26px;
+    font-size: 18px;
+    padding: 6px 26px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.button .button:hover {
+    background-color: #ff1d1d;
+    color: #ffffff;
+}
+
+.user_buttons{
+    margin-bottom: 40px !important;
+}
+.user_buttons div .user_button{
+    padding: 0 auto;
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+.user_login, .admin_login{
+    display: none;
+}
+.active{
+    display: block !important;
+}
+.active_button{
+    border-bottom: 1px solid #ff00008f !important;
+    box-shadow: 10px 10px 10px #ff00003e, -10px -10px 10px #ff000030;
+}
+.title{
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+.title h4{
+    font-size:60px;
+    opacity: 0.6;
+    color: #ffffff;
+}
+.title h5{
+    font-size:20px;
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+.valide{
+    color:rgb(5, 5, 5);
+}
+
+.invalide{
+    color:red;
+}
